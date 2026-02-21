@@ -1,5 +1,8 @@
 
+import Conclusion from "~/Components/conclusion";
 import ContactSection from "~/Components/contact";
+import EquipmentSection from "~/Components/EquipSection";
+import ExploreSection from "~/Components/Exploresection";
 import FAQ from "~/Components/faq";
 import GroupRide from "~/Components/groupride";
 import Hero from "~/Components/hero";
@@ -8,7 +11,9 @@ import MomentsSection from "~/Components/moments";
 import Navbar from "~/Components/navbar";
 import ReadySection from "~/Components/readytoride";
 import Testimonials from "~/Components/realstories";
+import Stepssection from "~/Components/Stepssection";
 import TrustedSection from "~/Components/trustedsection";
+import UpcomingRides from "~/Components/UpcomingRides";
 
 
 
@@ -20,6 +25,12 @@ export default function Home() {
      <Hero />
      <TrustedSection />
      <GroupRide/>
+     <UpcomingRides/>
+     <EquipmentSection/>
+      <ExploreSection/>
+  
+       <Stepssection/>
+      
      <Testimonials/>
      <ReadySection />
      
@@ -27,6 +38,7 @@ export default function Home() {
      <LearnFromRoad/>
      <ContactSection/>
      <MomentsSection/>
+     <Conclusion/>
      
      
      
