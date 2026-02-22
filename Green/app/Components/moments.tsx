@@ -34,12 +34,11 @@ export default function MomentsSection() {
   return (
     <section ref={sectionRef} className="bg-gray-100 py-24 px-6">
       <div className="max-w-6xl mx-auto">
-        
+
         {/* Heading */}
         <div
-          className={`text-center mb-16 transform transition-all duration-1000 ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-          }`}
+          className={`text-center mb-16 transform transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+            }`}
         >
           <h2 className="text-4xl md:text-5xl font-extrabold text-black mb-4">
             Moments on the road
@@ -54,17 +53,17 @@ export default function MomentsSection() {
           {images.map((img, index) => (
             <div
               key={img.id}
-              className={`overflow-hidden rounded-xl break-inside-avoid transform transition-all duration-700 ${
-                isVisible
+              className={`overflow-hidden rounded-xl break-inside-avoid transform transition-all duration-700 ${isVisible
                   ? "opacity-100 translate-y-0"
                   : "opacity-0 translate-y-10"
-              }`}
+                }`}
               style={{ transitionDelay: `${index * 150}ms` }} // stagger effect
             >
               <img
                 src={`${img.src}?auto=format&fit=crop&w=800&q=80`}
                 alt="Cycling moment"
-                className="w-full h-auto rounded-xl object-cover hover:scale-105 transition duration-500 ease-in-out cursor-pointer"
+                className={`w-full object-cover rounded-xl hover:scale-105 transition duration-500 ease-in-out cursor-pointer ${index === 6 ? "h-60" : "h-auto"
+                  } `}
               />
             </div>
           ))}

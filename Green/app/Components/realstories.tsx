@@ -3,8 +3,17 @@ import { useEffect, useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const testimonials = [
+
   {
     id: 1,
+    rating: 4,
+    text: `"I've found mechanics I trust and routes I never would have discovered alone. Green Gladiator made cycling feel less solitary."`,
+    name: "Marcus Chen",
+    role: "Weekend rider, Sydney",
+    image: "https://i.postimg.cc/rw8NGNN6/Avatar-Image.jpg",
+  },
+  {
+    id: 2,
     rating: 4,
     text: `"I've found mechanics I trust and routes I never would have discovered alone. Green Gladiator made cycling feel less solitary."`,
     name: "Marcus Chen",
@@ -12,7 +21,7 @@ const testimonials = [
     image: "https://i.pravatar.cc/100?img=3",
   },
   {
-    id: 2,
+    id: 3,
     rating: 5,
     text: `"The community rides are amazing. I've met incredible people and improved my skills tremendously."`,
     name: "Sophia Lee",
@@ -20,7 +29,7 @@ const testimonials = [
     image: "https://i.pravatar.cc/100?img=5",
   },
   {
-    id: 3,
+    id: 4,
     rating: 4,
     text: `"Best cycling group I've ever joined. The routes are beautiful and well organized."`,
     name: "Daniel Wong",

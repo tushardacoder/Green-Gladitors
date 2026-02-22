@@ -3,10 +3,12 @@ import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 
 const products = [
+
   {
+    
     id: 1,
     image:
-      "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?q=80&w=1000",
+      "https://i.postimg.cc/8CmHLrM2/f004c3bc4dde543d6f629503829a8c70bb3774af.jpg",
     title: "Lightweight jersey",
     category: "Red",
     price: "৳1,279.00",
@@ -14,7 +16,7 @@ const products = [
   {
     id: 2,
     image:
-      "https://images.unsplash.com/photo-1599058917212-d750089bc07e?q=80&w=1000",
+      "https://i.postimg.cc/5t4vdKQP/f308443df4e5b3885215abbc859e6ef9319b06c7.jpg",
     title: "Cycling shorts",
     category: "Padded",
     price: "৳1,179.00",
@@ -22,7 +24,7 @@ const products = [
   {
     id: 3,
     image:
-      "https://images.unsplash.com/photo-1580894908361-967195033215?q=80&w=1000",
+      "https://i.postimg.cc/N0dXg81Y/61dee7b11adeacc0d7be26330604daa9f6377c0c.jpg",
     title: "Water bottle",
     category: "Padded",
     price: "৳879.00",
@@ -30,19 +32,45 @@ const products = [
   {
     id: 4,
     image:
-      "https://images.unsplash.com/photo-1520975916090-3105956dac38?q=80&w=1000",
+      "https://i.postimg.cc/VNKtY9jB/a88dcc29ff68b95a160bf722e4d919218aaa6a74.jpg",
     title: "Bike lock",
     category: "U-lock",
     price: "৳460.00",
   },
   {
+    
     id: 5,
     image:
-      "https://images.unsplash.com/photo-1518655048521-f130df041f66?q=80&w=1000",
-    title: "Cycling gloves",
-    category: "Comfort",
-    price: "৳599.00",
+      "https://images.unsplash.com/photo-1600185365483-26d7a4cc7519?q=80&w=1000",
+    title: "Lightweight jersey",
+    category: "Red",
+    price: "৳1,279.00",
   },
+  {
+    id: 6,
+    image:
+      "https://images.unsplash.com/photo-1599058917212-d750089bc07e?q=80&w=1000",
+    title: "Cycling shorts",
+    category: "Padded",
+    price: "৳1,179.00",
+  },
+  {
+    id: 7,
+    image:
+      "https://images.unsplash.com/photo-1580894908361-967195033215?q=80&w=1000",
+    title: "Water bottle",
+    category: "Padded",
+    price: "৳879.00",
+  },
+  {
+    id: 8,
+    image:
+      "https://images.unsplash.com/photo-1520975916090-3105956dac38?q=80&w=1000",
+    title: "Bike lock",
+    category: "U-lock",
+    price: "৳460.00",
+  },
+  
 ];
 
 export default function EquipmentSection() {

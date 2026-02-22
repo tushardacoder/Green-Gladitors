@@ -7,7 +7,7 @@ const rides = [
     id: 1,
     day: "09",
     image:
-      "https://images.unsplash.com/photo-1541625602330-2277a4c46182?q=80&w=1200",
+      "https://i.postimg.cc/J7dxZn7h/64288d264687adcecb9332751cde5a357c8a6330_(2).jpg",
     location: "Mohammadpur - Uttara 10",
     title: "Coastal morning loop",
     description:
@@ -20,7 +20,7 @@ const rides = [
     id: 2,
     day: "10",
     image:
-      "https://images.unsplash.com/photo-1517649763962-0c623066013b?q=80&w=1200",
+      "https://i.postimg.cc/sXhLw37d/c27e5219337e620817d2725d9669c42e7c72b562_(1).jpg",
     location: "Mohammadpur - Uttara 10",
     title: "Coastal morning loop",
     description:
@@ -30,6 +30,19 @@ const rides = [
     time: "1h 50m",
   },
   {
+    id: 3,
+    day: "11",
+    image:
+      "https://i.postimg.cc/bJMNGfrf/b827c741d31626a778a42737f672d8f2c9b80d51.jpg",
+    location: "Mohammadpur - Uttara 10",
+    title: "Coastal morning loop",
+    description:
+      "Smooth coastal roads with ocean views and a steady pace for all levels",
+    distance: "23.25 Km",
+    elevation: "4 m",
+    time: "1h 50m",
+  },
+   {
     id: 3,
     day: "11",
     image:
@@ -43,7 +56,46 @@ const rides = [
     time: "1h 50m",
   },
    {
-    id: 3,
+    id: 4,
+    day: "09",
+    image:
+      "https://i.postimg.cc/J7dxZn7h/64288d264687adcecb9332751cde5a357c8a6330_(2).jpg",
+    location: "Mohammadpur - Uttara 10",
+    title: "Coastal morning loop",
+    description:
+      "Smooth coastal roads with ocean views and a steady pace for all levels",
+    distance: "23.25 Km",
+    elevation: "4 m",
+    time: "1h 50m",
+  },
+  {
+    id: 5,
+    day: "10",
+    image:
+      "https://i.postimg.cc/sXhLw37d/c27e5219337e620817d2725d9669c42e7c72b562_(1).jpg",
+    location: "Mohammadpur - Uttara 10",
+    title: "Coastal morning loop",
+    description:
+      "Smooth coastal roads with ocean views and a steady pace for all levels",
+    distance: "23.25 Km",
+    elevation: "4 m",
+    time: "1h 50m",
+  },
+  {
+    id: 6,
+    day: "11",
+    image:
+      "https://i.postimg.cc/bJMNGfrf/b827c741d31626a778a42737f672d8f2c9b80d51.jpg",
+    location: "Mohammadpur - Uttara 10",
+    title: "Coastal morning loop",
+    description:
+      "Smooth coastal roads with ocean views and a steady pace for all levels",
+    distance: "23.25 Km",
+    elevation: "4 m",
+    time: "1h 50m",
+  },
+   {
+    id: 7,
     day: "11",
     image:
       "https://images.unsplash.com/photo-1507034589631-9433cc6bc453?q=80&w=1200",

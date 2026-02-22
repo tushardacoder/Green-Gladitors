@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 export default function GroupRide() {
- const eventDate = new Date("2026-02-15T00:00:00");
+  const eventDate = new Date("2026-02-15T00:00:00");
   const targetDate = new Date("2026-02-25T00:00:00").getTime();
   const [timeLeft, setTimeLeft] = useState(getTimeRemaining());
 
@@ -17,7 +17,7 @@ export default function GroupRide() {
     };
   }
 
-   const formattedDate = eventDate.toLocaleDateString("en-US", {
+  const formattedDate = eventDate.toLocaleDateString("en-US", {
     weekday: "short",
     day: "numeric",
     month: "short",
@@ -68,10 +68,11 @@ export default function GroupRide() {
 
         {/* RIGHT SIDE */}
         <div className="flex flex-col items-start md:items-end">
-          <h2 className="text-3xl font-semibold mb-8">
-             {formattedDate}
-          </h2>
-
+          <div className="mx-auto">
+            <h2 className="text-3xl font-semibold mb-8 ">
+              {formattedDate}
+            </h2>
+          </div>
           <div className="bg-[#bfe0bf] rounded-2xl px-10 py-6 flex gap-12 shadow-md">
             <TimeBox value={timeLeft.days} label="Days" />
             <TimeBox value={timeLeft.hours} label="Hours" />
@@ -79,7 +80,7 @@ export default function GroupRide() {
             <TimeBox value={timeLeft.seconds} label="Secs" />
           </div>
 
-          <div className="mt-6 bg-green-600 text-white text-sm font-medium px-5 py-2 rounded-full shadow">
+          <div className="mt-6 bg-green-600 mx-auto text-white text-sm font-medium px-5 py-2 rounded-full shadow">
             6 Spots Remaining
           </div>
         </div>
