@@ -9,25 +9,25 @@ export default function ReadySection() {
   ];
 
   return (
-    <section className="bg-gray-100 py-24 overflow-hidden">
-      <div className="max-w-6xl mx-auto text-center px-6">
+    <section className="bg-gray-100 py-16 md:py-24 overflow-hidden">
+      <div className="max-w-6xl mx-auto text-center px-4 sm:px-6">
         
         {/* Heading */}
-        <h1 className="text-5xl md:text-6xl font-extrabold text-black mb-6">
+        <h1 className="text-3xl sm:text-4xl md:text-6xl font-extrabold text-black mb-4 md:mb-6 leading-tight">
           Ready to ride together
         </h1>
 
-        <p className="text-gray-500 text-lg mb-10">
+        <p className="text-gray-500 text-base sm:text-lg mb-8 md:mb-10 max-w-2xl mx-auto">
           Join verified cyclists exploring new routes every week
         </p>
 
         {/* Buttons */}
-        <div className="flex justify-center gap-4 mb-20">
-          <button className="px-8 py-3 rounded-md bg-green-400 text-black font-semibold shadow-lg hover:scale-105 transition duration-300">
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-4 mb-16 md:mb-20">
+          <button className="w-full sm:w-auto px-8 py-3 rounded-md bg-green-400 text-black font-semibold shadow-lg hover:scale-105 transition duration-300">
             Join Now
           </button>
 
-          <button className="px-8 py-3 rounded-md border border-gray-400 text-black hover:bg-gray-200 transition duration-300">
+          <button className="w-full sm:w-auto px-8 py-3 rounded-md border border-gray-400 text-black hover:bg-gray-200 transition duration-300">
             Learn More
           </button>
         </div>
@@ -35,13 +35,13 @@ export default function ReadySection() {
 
       {/* Logo Marquee */}
       <div className="relative w-full overflow-hidden">
-        <div className="flex w-max gap-16 animate-marquee">
+        <div className="flex w-max gap-10 sm:gap-16 animate-marquee">
           {[...logos, ...logos].map((logo, index) => (
             <img
               key={index}
               src={logo}
               alt="brand logo"
-              className="h-10 w-auto opacity-80"
+              className="h-8 sm:h-10 md:h-12 w-auto opacity-80"
             />
           ))}
         </div>
@@ -57,6 +57,12 @@ export default function ReadySection() {
 
           .animate-marquee {
             animation: marquee 20s linear infinite;
+          }
+
+          @media (max-width: 640px) {
+            .animate-marquee {
+              animation: marquee 12s linear infinite;
+            }
           }
         `}
       </style>

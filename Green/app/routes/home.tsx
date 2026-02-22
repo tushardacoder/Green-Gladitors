@@ -2,9 +2,11 @@
 import Conclusion from "~/Components/conclusion";
 import ContactSection from "~/Components/contact";
 import EquipmentSection from "~/Components/EquipSection";
-import ExploreSection from "~/Components/Exploresection";
+import DiscoverSection from "~/Components/exploresection";
+
 import FAQ from "~/Components/faq";
 import GroupRide from "~/Components/groupride";
+
 import Hero from "~/Components/hero";
 import LearnFromRoad from "~/Components/learnfromroad";
 import MomentsSection from "~/Components/moments";
@@ -24,10 +26,10 @@ export default function Home() {
      <Navbar />
      <Hero />
      <TrustedSection />
-     <GroupRide/>
-     <UpcomingRides/>
+     <GroupRide />
+      <UpcomingRides/>
      <EquipmentSection/>
-      <ExploreSection/>
+      <DiscoverSection />
   
        <Stepssection/>
       
