@@ -16,14 +16,14 @@ const Navbar: React.FC = () => {
 
   return (
     <header
-      className={`w-full linear-gradient(180deg, rgba(255, 255, 255, 0.20) 0%, rgba(255, 255, 255, 0.00) 100%);
-backdrop-filter: blur(0px) px-6 md:px-10 py-3 transition-all duration-300 ${
-        isSticky ? "fixed top-0 z-50 shadow-lg" : ""
-      }`}
-    >
+  className={`w-full px-6 md:px-10 py-3 transition-all duration-300
+  bg-white/10 backdrop-blur-lg border-b border-white/20
+  ${isSticky ? "fixed top-0 z-50 shadow-lg" : "absolute top-0 z-50"}
+`}
+>
       <div className="flex items-center justify-between relative">
         {/* Logo */}
-        <div className="text-xl font-semibold">
+        <div className="text-xl font-semibold ml-10">
           <span
             style={{
               color: "#0F0",

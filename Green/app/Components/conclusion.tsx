@@ -22,11 +22,11 @@ export default function Footer() {
   );
 
   return (
-    <footer className="bg-[#CFE3C9] pt-12 sm:pt-14 lg:pt-16 pb-8 px-4 sm:px-6 lg:px-10">
-      <div className="max-w-7xl mx-auto">
+    <footer className="bg-[#CFE3C9] pt-12 sm:pt-14 lg:pt-16 pb-8 px-4 sm:px-6 lg:px-10 ">
+      <div className="max-w-7xl mx-auto ">
 
         {/* Top Section */}
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-12">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-12 ">
 
           {/* Newsletter */}
           <div className="sm:col-span-2 lg:col-span-2">

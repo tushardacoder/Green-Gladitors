@@ -14,7 +14,7 @@ const Hero: React.FC = () => {
       <div className="absolute inset-0 bg-black/50"></div>
 
       {/* Top Right Small Text */}
-      <div className="absolute top-6 right-6 md:top-10 md:right-16 max-w-xs md:max-w-md text-right text-gray-200 text-xs sm:text-sm md:text-base px-2 md:px-0">
+      <div className="absolute top-20 right-6 md:top-25 md:right-16 max-w-xs md:max-w-md text-right text-gray-200 text-xs sm:text-sm md:text-base px-2 md:px-0">
         Join verified riders discovering new routes every week. Green Gladers
         connects cyclists through real experiences and trusted community.
       </div>
