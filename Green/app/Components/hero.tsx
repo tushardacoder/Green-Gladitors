@@ -13,8 +13,8 @@ const Hero: React.FC = () => {
       {/* Dark Overlay */}
       <div className="absolute inset-0 bg-black/50"></div>
 
-      {/* Top Right Small Text */}
-      <div className="absolute top-20 right-6 md:top-25 md:right-16 max-w-xs md:max-w-md text-right text-gray-200 text-xs sm:text-sm md:text-base px-2 md:px-0">
+      {/* Desktop Top Right Text */}
+      <div className="hidden md:block absolute top-20 right-16 max-w-md text-right text-gray-200 text-base">
         Join verified riders discovering new routes every week. Green Gladers
         connects cyclists through real experiences and trusted community.
       </div>
@@ -36,6 +36,12 @@ const Hero: React.FC = () => {
           <button className="border border-white text-white px-6 py-3 rounded-lg hover:bg-white hover:text-black transition w-full sm:w-auto">
             Learn more
           </button>
+        </div>
+
+        {/* Mobile + Tablet Text (Below Content) */}
+        <div className="mt-8 md:hidden text-gray-200 text-sm leading-relaxed max-w-md">
+          Join verified riders discovering new routes every week. Green Gladers
+          connects cyclists through real experiences and trusted community.
         </div>
       </div>
     </section>

@@ -141,16 +141,27 @@ export default function Footer() {
         </div>
 
         {/* Bottom */}
-        <div className="border-t border-gray-400/40 mt-8 lg:mt-10 pt-6 flex flex-col md:flex-row justify-between items-center md:items-start text-xs text-gray-700 gap-4">
+        <div className="border-t border-gray-400/40 mt-8 lg:mt-10 pt-6 
+flex flex-col-reverse md:flex-row 
+justify-between items-center md:items-start 
+text-xs text-gray-700 gap-4">
+
+          {/* Copyright */}
           <p className="underline text-center md:text-left">
             © 2026 Goinnovior Limited. All rights reserved.
           </p>
 
-          <div className="flex flex-wrap justify-center md:justify-end gap-4 md:gap-6">
+          {/* Links */}
+          <div className="flex flex-col md:flex-row 
+  items-center md:items-start 
+  gap-3 md:gap-6">
+
             <span className="underline cursor-pointer">Privacy policy</span>
             <span className="underline cursor-pointer">Terms of service</span>
             <span className="underline cursor-pointer">Cookie settings</span>
+
           </div>
+
         </div>
 
       </div>

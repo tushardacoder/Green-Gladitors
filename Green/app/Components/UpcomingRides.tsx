@@ -42,61 +42,9 @@ const rides = [
     elevation: "4 m",
     time: "1h 50m",
   },
-   {
-    id: 3,
-    day: "11",
-    image:
-      "https://images.unsplash.com/photo-1507034589631-9433cc6bc453?q=80&w=1200",
-    location: "Mohammadpur - Uttara 10",
-    title: "Coastal morning loop",
-    description:
-      "Smooth coastal roads with ocean views and a steady pace for all levels",
-    distance: "23.25 Km",
-    elevation: "4 m",
-    time: "1h 50m",
-  },
-   {
+  {
     id: 4,
-    day: "09",
-    image:
-      "https://i.postimg.cc/J7dxZn7h/64288d264687adcecb9332751cde5a357c8a6330_(2).jpg",
-    location: "Mohammadpur - Uttara 10",
-    title: "Coastal morning loop",
-    description:
-      "Smooth coastal roads with ocean views and a steady pace for all levels",
-    distance: "23.25 Km",
-    elevation: "4 m",
-    time: "1h 50m",
-  },
-  {
-    id: 5,
-    day: "10",
-    image:
-      "https://i.postimg.cc/sXhLw37d/c27e5219337e620817d2725d9669c42e7c72b562_(1).jpg",
-    location: "Mohammadpur - Uttara 10",
-    title: "Coastal morning loop",
-    description:
-      "Smooth coastal roads with ocean views and a steady pace for all levels",
-    distance: "23.25 Km",
-    elevation: "4 m",
-    time: "1h 50m",
-  },
-  {
-    id: 6,
-    day: "11",
-    image:
-      "https://i.postimg.cc/bJMNGfrf/b827c741d31626a778a42737f672d8f2c9b80d51.jpg",
-    location: "Mohammadpur - Uttara 10",
-    title: "Coastal morning loop",
-    description:
-      "Smooth coastal roads with ocean views and a steady pace for all levels",
-    distance: "23.25 Km",
-    elevation: "4 m",
-    time: "1h 50m",
-  },
-   {
-    id: 7,
-    day: "11",
+    day: "12",
     image:
       "https://images.unsplash.com/photo-1507034589631-9433cc6bc453?q=80&w=1200",
     location: "Mohammadpur - Uttara 10",
@@ -106,46 +54,41 @@ const rides = [
     distance: "23.25 Km",
     elevation: "4 m",
     time: "1h 50m",
-  }
+  },
 ];
 
 export default function UpcomingRides() {
-  const containerRef = useRef(null);
+  const containerRef = useRef<HTMLDivElement | null>(null);
   const [current, setCurrent] = useState(0);
 
-  const slideWidth = 100; // 100%
+  const slideWidth = 100;
 
   const nextSlide = () => {
-    const newIndex = (current + 1) % rides.length;
-    setCurrent(newIndex);
+    setCurrent((prev) => (prev + 1) % rides.length);
   };
 
   const prevSlide = () => {
-    const newIndex = (current - 1 + rides.length) % rides.length;
-    setCurrent(newIndex);
+    setCurrent((prev) => (prev - 1 + rides.length) % rides.length);
   };
 
   return (
     <section className="bg-gray-100 py-16 px-6 lg:px-20 overflow-hidden">
+      
       {/* Header */}
-     {/* Header */}
-<div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-10 gap-6">
-  
-  {/* Text Content */}
-  <div>
-    <p className="text-sm text-gray-500 mb-1">Rides</p>
-    <h2 className="text-4xl font-bold">Upcoming</h2>
-    <p className="text-gray-500 mt-2">
-      Pick a ride that fits your pace and join the adventure
-    </p>
-  </div>
+      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-10 gap-6">
+        <div>
+          <p className="text-sm text-gray-500 mb-1">Rides</p>
+          <h2 className="text-4xl font-bold">Upcoming</h2>
+          <p className="text-gray-500 mt-2">
+            Pick a ride that fits your pace and join the adventure
+          </p>
+        </div>
 
-  {/* Button */}
-  <button className="w-full sm:w-auto bg-lime-400 hover:bg-lime-500 transition px-6 py-3 rounded-lg font-semibold shadow-md">
-    Join the ride
-  </button>
-
-</div>
+        {/* Desktop Button */}
+        <button className="hidden lg:block bg-lime-400 hover:bg-lime-500 transition px-6 py-3 rounded-lg font-semibold shadow-md">
+          Join the ride
+        </button>
+      </div>
 
       {/* Slider */}
       <div className="relative">
@@ -163,6 +106,7 @@ export default function UpcomingRides() {
                 className="min-w-full md:min-w-[50%] lg:min-w-[33.33%] p-4"
               >
                 <div className="bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden group">
+                  
                   {/* Image */}
                   <div className="relative h-56 overflow-hidden">
                     <img
@@ -233,6 +177,13 @@ export default function UpcomingRides() {
             ></div>
           ))}
         </div>
+      </div>
+
+      {/* Mobile + Tablet Button */}
+      <div className="mt-10 lg:hidden">
+        <button className="w-full bg-lime-400 hover:bg-lime-500 transition px-6 py-3 rounded-lg font-semibold shadow-md">
+          Join the ride
+        </button>
       </div>
     </section>
   );

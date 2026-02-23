@@ -23,7 +23,7 @@ const ContactSection: React.FC = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 sm:gap-12 text-center md:text-left">
           
           {/* Email */}
-          <div className="flex flex-col items-center md:items-start">
+          <div className="flex flex-col items-start md:items-start">
             <div className="text-green-500 text-2xl sm:text-3xl mb-5">
               <FiMail />
             </div>
@@ -42,7 +42,7 @@ const ContactSection: React.FC = () => {
           </div>
 
           {/* Phone */}
-          <div className="flex flex-col items-center md:items-start">
+          <div className="flex flex-col items-start md:items-start">
             <div className="text-green-500 text-2xl sm:text-3xl mb-5">
               <FiPhone />
             </div>
@@ -58,7 +58,7 @@ const ContactSection: React.FC = () => {
           </div>
 
           {/* Office */}
-          <div className="flex flex-col items-center md:items-start">
+          <div className="flex flex-col items-start md:items-start">
             <div className="text-green-500 text-2xl sm:text-3xl mb-5">
               <FiMapPin />
             </div>
