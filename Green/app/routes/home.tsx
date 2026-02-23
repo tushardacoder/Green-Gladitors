@@ -1,4 +1,5 @@
 
+import { Scroll } from "lucide-react";
 import Conclusion from "~/Components/conclusion";
 import ContactSection from "~/Components/contact";
 import EquipmentSection from "~/Components/EquipSection";
@@ -13,6 +14,7 @@ import MomentsSection from "~/Components/moments";
 import Navbar from "~/Components/navbar";
 import ReadySection from "~/Components/readytoride";
 import Testimonials from "~/Components/realstories";
+import ScrollToTop from "~/Components/Scroll";
 import Stepssection from "~/Components/Stepssection";
 import TrustedSection from "~/Components/trustedsection";
 import UpcomingRides from "~/Components/UpcomingRides";
@@ -41,6 +43,9 @@ export default function Home() {
      <ContactSection/>
      <MomentsSection/>
      <Conclusion/>
+    
+     <ScrollToTop />
+      
      
      
      
