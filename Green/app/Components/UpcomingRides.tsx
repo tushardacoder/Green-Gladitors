@@ -128,19 +128,24 @@ export default function UpcomingRides() {
   return (
     <section className="bg-gray-100 py-16 px-6 lg:px-20 overflow-hidden">
       {/* Header */}
-      <div className="flex items-center justify-between mb-10">
-        <div>
-          <p className="text-sm text-gray-500 mb-1">Rides</p>
-          <h2 className="text-4xl font-bold">Upcoming</h2>
-          <p className="text-gray-500 mt-2">
-            Pick a ride that fits your pace and join the adventure
-          </p>
-        </div>
+     {/* Header */}
+<div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-10 gap-6">
+  
+  {/* Text Content */}
+  <div>
+    <p className="text-sm text-gray-500 mb-1">Rides</p>
+    <h2 className="text-4xl font-bold">Upcoming</h2>
+    <p className="text-gray-500 mt-2">
+      Pick a ride that fits your pace and join the adventure
+    </p>
+  </div>
 
-        <button className="bg-lime-400 hover:bg-lime-500 transition px-6 py-2 rounded-lg font-semibold shadow-md">
-          Join the ride
-        </button>
-      </div>
+  {/* Button */}
+  <button className="w-full sm:w-auto bg-lime-400 hover:bg-lime-500 transition px-6 py-3 rounded-lg font-semibold shadow-md">
+    Join the ride
+  </button>
+
+</div>
 
       {/* Slider */}
       <div className="relative">

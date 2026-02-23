@@ -17,17 +17,17 @@ export default function Footer() {
       fill="currentColor"
       className={className}
     >
-      <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.847h-7.406l-5.8-7.584-6.63 7.584H.48l8.6-9.83L0 1.153h7.594l5.243 6.932L18.9 1.153zm-1.292 19.39h2.04L6.486 3.36H4.297l13.312 17.183z"/>
+      <path d="M18.901 1.153h3.68l-8.04 9.19L24 22.847h-7.406l-5.8-7.584-6.63 7.584H.48l8.6-9.83L0 1.153h7.594l5.243 6.932L18.9 1.153zm-1.292 19.39h2.04L6.486 3.36H4.297l13.312 17.183z" />
     </svg>
   );
 
   return (
     <footer className="bg-[#CFE3C9] pt-12 sm:pt-14 lg:pt-16 pb-8 px-4 sm:px-6 lg:px-10">
       <div className="max-w-7xl mx-auto">
-        
+
         {/* Top Section */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-10 lg:gap-12">
-          
+
           {/* Newsletter */}
           <div className="sm:col-span-2 lg:col-span-2">
             <h2 className="text-xl sm:text-2xl font-semibold">
@@ -39,14 +39,14 @@ export default function Footer() {
             </p>
 
             {/* Responsive input */}
-            <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+            <div className="flex flex-col lg:flex-row items-stretch lg:items-center gap-3">
               <input
                 type="email"
                 placeholder="Enter email"
-                className="w-full sm:w-auto sm:flex-1 px-4 py-3 rounded-lg bg-white/80 backdrop-blur border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 transition"
+                className="w-full lg:flex-1 px-4 py-3 rounded-lg bg-white/80 backdrop-blur border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 transition"
               />
 
-              <button className="w-full sm:w-auto bg-green-500 hover:bg-lime-500 text-black font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-all duration-200">
+              <button className="w-full lg:w-auto bg-green-500 hover:bg-lime-500 text-black font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-all duration-200">
                 Reserve now
               </button>
             </div>

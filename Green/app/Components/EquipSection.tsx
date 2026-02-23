@@ -90,7 +90,7 @@ export default function EquipmentSection() {
   return (
     <section className="bg-gray-100 py-16 px-6 lg:px-20 overflow-hidden">
       {/* Header */}
-      <div className="flex justify-between items-center mb-10">
+      <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between mb-10 gap-6">
         <div>
           <p className="text-sm text-gray-500 mb-1">Essentials</p>
           <h2 className="text-4xl font-bold">Equipment</h2>
