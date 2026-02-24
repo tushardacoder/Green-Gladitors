@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { ChevronLeft, ChevronRight } from "lucide-react";
+import {ArrowLeft ,ArrowRight } from "lucide-react";
 
 const products = [
 
@@ -146,14 +147,20 @@ export default function EquipmentSection() {
             onClick={prevSlide}
             className="w-10 h-10 flex items-center justify-center rounded-full border border-gray-300 hover:bg-gray-200 transition"
           >
-            <ChevronLeft size={18} />
+            <ArrowLeft size={18} />
           </button>
 
           <button
             onClick={nextSlide}
-            className="w-10 h-10 flex items-center justify-center rounded-full bg-lime-400 hover:bg-lime-500 transition"
+            className="w-10 h-10 flex items-center justify-center transition"
+            style={{
+              borderRadius: "50px",
+              border: "1px solid #0F0",
+              background: "#0F0",
+              boxShadow: "0 2px 4px 0 rgba(0, 0, 0, 0.10) inset",
+            }}
           >
-            <ChevronRight size={18} />
+            <ArrowRight size={18} />
           </button>
         </div>
 

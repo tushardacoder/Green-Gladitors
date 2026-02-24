@@ -14,14 +14,32 @@ const Hero: React.FC = () => {
       <div className="absolute inset-0 bg-black/50"></div>
 
       {/* Desktop Top Right Text */}
-      <div className="hidden md:block absolute top-20 right-16 max-w-md text-right text-gray-200 text-base">
+      <div
+        className="hidden md:block absolute top-20 right-16 max-w-md
+        text-right
+        text-[var(--Color-Neutral,#555)]
+        font-inter
+        text-[18px]
+        font-normal
+        leading-[150%]
+        z-20"
+      >
         Join verified riders discovering new routes every week. Green Gladers
         connects cyclists through real experiences and trusted community.
       </div>
 
+
       {/* Main Content */}
       <div className="relative z-10 w-full px-6 sm:px-10 md:px-20 py-20">
-        <h1 className="text-white text-3xl sm:text-4xl md:text-6xl font-bold leading-tight max-w-xl md:max-w-3xl">
+        <h1
+          className="text-[var(--Color-White,#FFF)]
+  font-unbounded
+  text-[48px]
+  font-medium
+  leading-normal
+  capitalize
+  max-w-xl md:max-w-3xl"
+        >
           Ride Together. Explore More.
           <br />
           Support Cycling.
@@ -29,11 +47,31 @@ const Hero: React.FC = () => {
 
         {/* Buttons */}
         <div className="mt-8 flex flex-col sm:flex-row gap-4 sm:gap-6">
-          <button className="bg-gradient-to-r from-green-400 to-green-600 text-black font-semibold px-6 py-3 rounded-lg shadow-lg hover:opacity-90 transition w-full sm:w-auto">
+          <button
+            className="bg-gradient-to-r from-green-400 to-green-600
+  text-[var(--Color-Scheme-1-Text,#000)]
+  font-unbounded
+  text-[var(--Text-Sizes-Text-Regular,16px)]
+  font-normal
+  leading-[150%]
+  px-8 py-3 rounded-lg
+  shadow-lg hover:opacity-90 transition
+  w-full sm:w-auto"
+          >
             Join now
           </button>
 
-          <button className="border border-white text-white px-6 py-3 rounded-lg hover:bg-white hover:text-black transition w-full sm:w-auto">
+          <button
+            className="border border-white
+  text-white
+  font-unbounded
+  text-[16px]
+  font-normal
+  leading-[150%]
+  px-6 py-3 rounded-lg
+  hover:bg-white hover:text-black
+  transition w-full sm:w-auto"
+          >
             Learn more
           </button>
         </div>

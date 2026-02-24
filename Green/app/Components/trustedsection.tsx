@@ -13,7 +13,15 @@ export default function TrustedSection() {
     <section className="bg-gray-100 py-14 sm:py-16 md:py-20 overflow-hidden w-full">
       <div className="w-full text-center px-6">
         {/* Heading */}
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-gray-900 mb-10 md:mb-12 leading-snug">
+        <h2
+          className="text-[var(--Color-Scheme-1-Text,#000)]
+  text-center
+  font-unbounded
+  text-[32px]
+  font-bold
+  leading-[150%]
+  mb-10 md:mb-12"
+        >
           Trusted by cycling shops <br className="hidden sm:block" />
           and riders everywhere
         </h2>

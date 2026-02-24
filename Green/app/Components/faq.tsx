@@ -38,7 +38,7 @@ const FAQ: React.FC = () => {
 
   return (
     <section className="bg-green-100 py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-12 lg:px-20">
-      
+
       {/* Heading */}
       <div className="max-w-3xl mx-auto text-center mb-10 sm:mb-12">
         <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-3">
@@ -63,21 +63,21 @@ const FAQ: React.FC = () => {
 
               {/* Icon */}
               <span
-                className={`text-xl transform transition-transform duration-300 ${
-                  openIndex === index ? "rotate-180" : "rotate-0"
-                }`}
+                className={`text-xl transform transition-transform duration-300 ${openIndex === index ? "rotate-180" : "rotate-0"
+                  }`}
               >
-                ⌄
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="9" viewBox="0 0 16 9" fill="none">
+                  <path d="M7.70215 0.666992C7.82721 0.666992 7.92742 0.704826 8.03418 0.811523L14.627 7.40332C14.7361 7.51254 14.7715 7.61124 14.7715 7.72754C14.7715 7.84385 14.7361 7.94255 14.627 8.05176C14.5229 8.1558 14.4204 8.1962 14.2861 8.19629C14.1516 8.19629 14.0485 8.15592 13.9443 8.05176L13.9434 8.05078L8.17285 2.3125L7.70117 1.84375L1.45996 8.08496C1.35631 8.18862 1.26767 8.21778 1.16016 8.21387C1.03447 8.20927 0.926263 8.1665 0.811523 8.05176C0.707376 7.9476 0.666992 7.84547 0.666992 7.71094C0.667005 7.57643 0.707373 7.47427 0.811523 7.37012L7.37012 0.811523C7.47688 0.704765 7.57711 0.66703 7.70215 0.666992Z" fill="black" stroke="black" stroke-width="1.33333" />
+                </svg>
               </span>
             </button>
 
             {/* Answer with smooth animation */}
             <div
-              className={`grid transition-all duration-300 ease-in-out ${
-                openIndex === index
+              className={`grid transition-all duration-300 ease-in-out ${openIndex === index
                   ? "grid-rows-[1fr] opacity-100"
                   : "grid-rows-[0fr] opacity-0"
-              }`}
+                }`}
             >
               <div className="overflow-hidden">
                 <p className="px-4 sm:px-6 pb-4 sm:pb-6 text-gray-700 text-sm sm:text-base leading-relaxed">

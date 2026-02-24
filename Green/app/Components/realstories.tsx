@@ -1,12 +1,12 @@
 
 import { useEffect, useState } from "react";
-import { ChevronLeft, ChevronRight } from "lucide-react";
 
+import {ArrowLeft ,ArrowRight } from "lucide-react";
 const testimonials = [
 
   {
     id: 1,
-    rating: 4,
+    rating: 4.5,
     text: `"I've found mechanics I trust and routes I never would have discovered alone. Green Gladiator made cycling feel less solitary."`,
     name: "Marcus Chen",
     role: "Weekend rider, Sydney",
@@ -74,14 +74,14 @@ export default function Testimonials() {
             onClick={prevSlide}
             className="absolute left-[-25px] top-1/2 -translate-y-1/2 bg-white border rounded-full p-3 shadow hover:bg-gray-100 transition"
           >
-            <ChevronLeft size={20} />
+            <ArrowLeft size={20} />
           </button>
 
           <button
             onClick={nextSlide}
             className="absolute right-[-25px] top-1/2 -translate-y-1/2 bg-green-500 text-white rounded-full p-3 shadow hover:bg-green-600 transition"
           >
-            <ChevronRight size={20} />
+            <ArrowRight size={20} />
           </button>
 
           {/* Stars */}

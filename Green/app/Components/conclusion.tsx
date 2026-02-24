@@ -31,7 +31,30 @@ export default function Footer() {
           {/* Newsletter */}
           <div className="sm:col-span-2 lg:col-span-2">
             <h2 className="text-xl sm:text-2xl font-semibold">
-              <span className="text-green-500 mr-3">Green</span>Gliders
+              <span
+                className="mr-3"
+                style={{
+                  color: "#0F0",
+                  fontFamily: "Syne",
+                  fontSize: "30.934px",
+                  fontStyle: "normal",
+                  fontWeight: 700,
+                  lineHeight: "normal",
+                  textTransform: "capitalize",
+                }}
+              >
+                Green</span><span
+                  style={{
+                    color: "#000",
+                    fontFamily: "Syne",
+                    fontSize: "30.934px",
+                    fontStyle: "normal",
+                    fontWeight: 700,
+                    lineHeight: "normal",
+                    textTransform: "capitalize",
+                  }}
+                >Glaiders
+              </span>
             </h2>
 
             <p className="text-gray-700 mt-4 mb-6 text-sm">
@@ -46,7 +69,14 @@ export default function Footer() {
                 className="w-full lg:flex-1 px-4 py-3 rounded-lg bg-white/80 backdrop-blur border border-gray-300 focus:outline-none focus:ring-2 focus:ring-green-500 transition"
               />
 
-              <button className="w-full lg:w-auto bg-green-500 hover:bg-lime-500 text-black font-semibold px-6 py-3 rounded-lg shadow-md hover:shadow-lg transition-all duration-200">
+              <button
+                className="w-full lg:w-auto text-black font-semibold px-6 py-3 rounded-lg transition-all duration-200 transform hover:scale-105"
+                style={{
+                  borderRadius: "6px",
+                  background: "#0F0",
+                  boxShadow: "0 4px 19.8px 0 #FFF inset",
+                }}
+              >
                 Reserve now
               </button>
             </div>

@@ -40,10 +40,26 @@ export default function MomentsSection() {
           className={`text-center mb-16 transform transition-all duration-1000 ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
             }`}
         >
-          <h2 className="text-4xl md:text-5xl font-extrabold text-black mb-4">
-            Moments on the road
-          </h2>
-          <p className="text-gray-500">
+         <h2
+  className="text-black
+  text-center
+  font-unbounded
+  text-[48px]
+  font-bold
+  leading-[150%]
+  mb-4
+  tracking-wide"
+>
+  Moments on the road
+</h2>
+          <p
+            className="text-[#666]
+  text-center
+  font-inter
+  text-[18px]
+  font-normal
+  "
+          >
             See where our community rides and explores together
           </p>
         </div>
@@ -54,8 +70,8 @@ export default function MomentsSection() {
             <div
               key={img.id}
               className={`overflow-hidden rounded-xl break-inside-avoid transform transition-all duration-700 ${isVisible
-                  ? "opacity-100 translate-y-0"
-                  : "opacity-0 translate-y-10"
+                ? "opacity-100 translate-y-0"
+                : "opacity-0 translate-y-10"
                 }`}
               style={{ transitionDelay: `${index * 150}ms` }} // stagger effect
             >
